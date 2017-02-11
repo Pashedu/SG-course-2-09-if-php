@@ -42,11 +42,12 @@
             {
                 echo "Ви вибрали рік ".$yearsMass[intval($_POST['Years'] % 12)];
             }
-            echo '<p>Історія вибору</p>';
-            foreach ($_COOKIE['yearsHistory'] as $item) {
-                echo "<span> $item --> ".$yearsMass[$item % 12]."</span><br>";
+            if(isset($_COOKIE['yearsHistory'])) {
+                echo '<p>Історія вибору</p>';
+                foreach ($_COOKIE['yearsHistory'] as $item) {
+                    echo "<span> $item --> " . $yearsMass[$item % 12] . "</span><br>";
+                }
             }
-            //var_dump($_COOKIE['yearsHistory']);
         ?>
     </div>
 </body>
