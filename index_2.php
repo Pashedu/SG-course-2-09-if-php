@@ -31,7 +31,7 @@ function ifPrime($num)
     <title>Заглушка</title>
 </head>
 <body>
-<form method="POST" action="index.php">
+<form method="POST" action="index_2.php">
     <input type="text" name="num1">
     <input type="text" name="num2">
     <input type="submit" value="Ok">
